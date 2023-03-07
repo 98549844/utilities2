@@ -1,16 +1,13 @@
 package com.util.entity;
 
 import com.util.entity.base.BaseEntity;
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import org.hibernate.annotations.GenericGenerator;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
-
+@Table(name = "users")
 public class Users extends BaseEntity implements Serializable {
 
     @Id
