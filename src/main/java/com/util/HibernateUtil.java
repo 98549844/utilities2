@@ -13,7 +13,7 @@ import org.hibernate.query.Query;
 import java.util.List;
 
 
-public class HibernateUtil {
+class HibernateUtil {
     private static final Logger log = LogManager.getLogger(HibernateUtil.class.getName());
 
     private Session session;

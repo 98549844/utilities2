@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-    <class name="com.entity.dao.hibernate.Users"
+    <class name="com.util.entity.Users"
            table="users">
         <id name="userId" type="java.lang.Long">
             <column name="userId"/>
@@ -84,7 +84,7 @@
                 <comment>remark</comment>
             </column>
         </property>
-        <property name="enabled" type="java.lang.String">
+        <property name="enabled" type="java.lang.Boolean">
             <column name="enabled">
                 <comment>enabled</comment>
             </column>
